@@ -1,0 +1,73 @@
+/* RegisterDialog container styles */
+.register-dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Password visibility toggle button styling */
+.register-dialog .password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.register-dialog .password-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Adjust to bring closer */
+  font-size: 16px;
+}
+
+/* Register button styling */
+.register-dialog .login-panel-button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Register button */
+.register-dialog .login-panel-button:hover {
+  background-color: #45a049;
+}
+
+/* Cancel button styling */
+.register-dialog .login-panel-signup {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-dialog .login-panel-signup:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.register-dialog .login-panel-error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}

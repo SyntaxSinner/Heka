@@ -1,0 +1,36 @@
+/* Wrapper for the animated text */
+.type-animation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for the animated text */
+.type-animation-text {
+    font-size: 2.8em; /* Slightly larger for better emphasis */
+    font-weight: bold;
+    color: #ffffff; /* White fallback for older browsers */
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), /* Enhanced shadow */
+                 0px 0px 25px rgba(0, 242, 255, 0.9); /* Enhanced glow effect */
+    background: linear-gradient(90deg, #00f2ff, #76e4f7); /* Updated gradient */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Transparent fill for gradient effect */
+    animation: pulse 2.5s infinite ease-in-out; /* Smooth pulse animation */
+}
+
+/* Pulse animation for the text */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07); /* Slightly increased scale for smoother pulse */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
