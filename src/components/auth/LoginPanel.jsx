@@ -128,8 +128,7 @@ function LoginPanel({ onSignIn, onSignUp }) {
         (style, item) =>
           item && (
             <animated.div className="modal-backdrop" style={style}>
-              {/* Pass closeRegisterDialog as onCancel to RegisterDialog */}
-              <RegisterDialog onCancel={closeRegisterDialog} />
+              <RegisterDialog onRegister={onSignIn} onClose={closeRegisterDialog} />
             </animated.div>
           )
       )}

@@ -15,8 +15,8 @@
     font-weight: bold;
     color: #ffffff; /* White fallback for older browsers */
     text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), /* Enhanced shadow */
-                 0px 0px 25px rgba(0, 242, 255, 0.9); /* Enhanced glow effect */
-    background: linear-gradient(90deg, #00f2ff, #76e4f7); /* Updated gradient */
+                 0px 0px 25px rgba(255, 204, 0, 0.9); /* Gold glow effect */
+    background: linear-gradient(90deg, #ffcc00, #e6b800); /* Gold gradient */
     -webkit-background-clip: text; /* Clip background to text */
     -webkit-text-fill-color: transparent; /* Transparent fill for gradient effect */
     animation: pulse 2.5s infinite ease-in-out; /* Smooth pulse animation */

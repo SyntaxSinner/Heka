@@ -1,6 +1,6 @@
 /* RegisterDialog container styles */
 .register-dialog {
-  background-color: white;
+  background-color: #fff; /* White background */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -29,15 +29,20 @@
   position: absolute;
   right: 10px; /* Adjust to bring closer */
   font-size: 16px;
+  color: #888; /* Light grey */
+}
+
+.register-dialog .password-toggle-btn:hover {
+  color: #fff; /* White text on hover */
 }
 
 /* Register button styling */
 .register-dialog .login-panel-button {
   padding: 12px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ffcc00; /* Gold */
+  color: black; /* Black text */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   margin-top: 20px;
@@ -46,14 +51,14 @@
 
 /* Hover effect for Register button */
 .register-dialog .login-panel-button:hover {
-  background-color: #45a049;
+  background-color: #e6b800; /* Darker gold on hover */
 }
 
 /* Cancel button styling */
 .register-dialog .login-panel-signup {
   background: none;
   border: none;
-  color: #007bff;
+  color: #007bff; /* Blue for cancel action */
   cursor: pointer;
   margin-top: 10px;
   font-size: 14px;
@@ -66,7 +71,7 @@
 
 /* Error message styling */
 .register-dialog .login-panel-error {
-  color: red;
+  color: #ff6347; /* Tomato Red for error */
   font-size: 14px;
   margin-bottom: 10px;
   text-align: center;

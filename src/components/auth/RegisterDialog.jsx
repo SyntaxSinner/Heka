@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import "font-awesome/css/font-awesome.min.css";
 
-function RegisterDialog({ onRegister, onCancel }) {
+function RegisterDialog({ onRegister, onClose }) {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -55,8 +55,8 @@ function RegisterDialog({ onRegister, onCancel }) {
     setPasswordVisible(false);
     setError("");
     
-    // Call onCancel function to close the dialog
-    onCancel();
+    // Call onClose function to close the dialog
+    onClose();
   };
 
   const togglePasswordVisibility = () => {
